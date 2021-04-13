@@ -30,3 +30,7 @@ print(num2)
 num3 = Myfunctions.f5(12, 13)
 print(num3)
 
+nm1 = 12
+nm2 = 16
+nm3 = Myfunctions.f6(nm1,nm2)
+print(nm3 )

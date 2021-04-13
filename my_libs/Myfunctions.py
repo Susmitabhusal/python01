@@ -35,3 +35,7 @@ def f5(num1, num2):
     num3 = num1 + num2
     return num3
 
+
+def f6(n1, n2):
+    n3 = n1 + n2
+    return n3
