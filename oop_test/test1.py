@@ -27,7 +27,7 @@ print(obj3.name)
 print(obj3.address)
 print()
 
-#updating the value
+# updating the value
 obj2.id = 2
 obj2.name = "Broadway infosys"
 obj2.address = "kathmandu"
@@ -37,9 +37,9 @@ print(obj2.name)
 print(obj2.address)
 print()
 
-#updating the value of object 3
+# updating the value of object 3
 obj3.id = 3
-obj3.name ="ABC DEF"
+obj3.name = "ABC DEF"
 obj3.address = "Bhaktapur"
 
 print(obj3.id)
@@ -49,13 +49,22 @@ print()
 
 obj4 = Class3()
 obj4.f1()
-obj4.f2(12,13)
-var1 =obj4.f3()
+obj4.f2(12, 13)
+var1 = obj4.f3()
 print(var1)
-var2 =obj4.f4(12,12)
+var2 = obj4.f4(12, 12)
 print(var2)
+print("-----------------------------------")
 
+# accessing the instance variable
+obj5 = Class4()
+print(obj5.id, obj5.name, obj5.address)
 
-
-
-
+# updating the values
+obj5.id = 2
+obj5.name = "Susmita Bhusal"
+obj5.address = "Bhaktapur"
+print("-----------------------------------")
+print(obj5.id, obj5.name, obj5.address)
+print("-----------------------------------")
+print(obj5)  # call __str()-- method
