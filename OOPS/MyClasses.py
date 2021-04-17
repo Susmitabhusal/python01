@@ -36,10 +36,40 @@ class Class3():
 class Class4():
     # initializer function - constructur
     def __init__(self):
-        #instance variable
+        # instance variable
         self.id = 1
         self.name = "Broadway Info sys"
         self.address = "Kathmandu"
 
     def __str__(self):
-        return str(self.id) +","+self.name+ "," +self.address
+        return str(self.id) + "," + self.name + "," + self.address
+
+class Class5():
+    # initializer function - constructor
+    def __init__(self, id, name, address):
+        # instance variable
+        self.id = id
+        self.name = name
+        self.address = address
+
+    def __str__(self):
+        return str(self.id) + "," + self.name + "," + self.address
+
+
+class Class6():
+    # initializer function - constructor
+    def __init__(self, id):
+        # instance variable
+        self.id = id
+
+    # setter
+    def setId(self, id):
+        self.id = id
+
+    # Getter
+    def getId(self):
+        return str(self.id)
+
+    # str
+    def __str__(self):
+        return str(self.id)

@@ -67,4 +67,14 @@ obj5.address = "Bhaktapur"
 print("-----------------------------------")
 print(obj5.id, obj5.name, obj5.address)
 print("-----------------------------------")
-print(obj5)  # call __str()-- method
+print(obj5)  # call __str()__ method
+print("-----------------------------------")
+obj6 = Class5(1,"Susmita","Address")
+print(obj6)
+
+obj7 =Class6(100)
+print(obj7.getId())
+print(obj7)
+obj7.setId(102)
+print(obj7.getId())
+print(obj7)
