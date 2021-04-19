@@ -43,12 +43,15 @@ class Class4():
         self.name = name
         self.address = address
 
+
+    #getter
     def getValue(self):
         return str(self.id) + "," +self.name +"," +self.address
 
     def getId(self):
         return str(self.id)
 
+    #setter
     def setId(self, id):
         self.id = id
 
@@ -57,5 +60,7 @@ class Class4():
         self.name = name
         self.address = address
 
+
+    #__str__
     def __str__(self):
         return str(self.id) + "," +self.name +"," +self.address

@@ -78,3 +78,22 @@ print(obj7)
 obj7.setId(102)
 print(obj7.getId())
 print(obj7)
+print("-----------------------------------------")
+
+obj8 = Class7(2) #Class7()--> __init__(self,id=0)
+print(obj8)
+obj9 = Class7()
+print(obj9)
+print("-----------------------------------------")
+
+obj10 = Class8(1,"Susmita") #object declare and initialize
+ # print(obj10.id) #AttributeError: 'Class8' object has no attribute 'id'
+print(obj10.fullName)
+print(obj10.id)
+print(obj10.id,obj10.fullName)
+print(obj10.getId())
+obj10.setId(10)
+print(obj10)
+print("-----------------------------------------")
+
+
