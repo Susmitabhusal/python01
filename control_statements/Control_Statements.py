@@ -152,7 +152,7 @@ print(range(10))
 var1 = range(10)
 print(var1)
 
-#Collections with for loop
+#5.Collections with for loop
 list1 =[3,4,5,6,7]
 for item in list1:
     print(item)
@@ -165,7 +165,7 @@ set1 ={2,4,5,7,2,8,9}
 for item in set1:
     print(item)
 
-dict1 ={'id':1,'name':"Broadway info sys",'address':"KAthmandu,nepal"}
+dict1 ={'id':1,'name':"Broadway info sys",'address':"Kathmandu,nepal"}
 for key in dict1.keys():
     print(key)
 
@@ -185,3 +185,18 @@ from array import array
 array1 = array('i',[6,7,3,4,7])
 for item in array1:
     print(item)
+    print()
+
+
+# 1. print from 1 to 10
+i = 1
+while(i<=10):
+    print(i)
+    i+=1
+
+# 2. print first no to last no
+i=1
+while(i<=10):
+    print(i)
+    i+=1
+
