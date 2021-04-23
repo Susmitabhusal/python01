@@ -1,2 +1,3 @@
-from array import array
-help(array)
+#from array import array
+#help(array)
+help(list)

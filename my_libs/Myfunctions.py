@@ -1,3 +1,6 @@
+from array import array
+
+
 def f1():
     print("hello from f1 function")
     print("Name:Susmita")
@@ -39,3 +42,10 @@ def f5(num1, num2):
 def f6(n1, n2):
     n3 = n1 + n2
     return n3
+
+
+def array_copy(source_array):
+    destarray = array('i', [])
+    for item in source_array:
+        destarray.append(item)
+    return destarray
