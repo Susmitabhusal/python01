@@ -19,18 +19,152 @@ list1 = list(set1)
 print(list1)
 
 #append(self,object,/)
+print("----------------append---------------")
 list1.append(12)
 print(list1)
+
 #clear
+print("-------------clear--------------------")
+list2 = [2,4,5,8,9]
+list2.clear()
+print(list2)
 
 #copy
-list1 =[3,4,7,9,4]
+print("--------------copy----------------------")
+list1 =[3,4,7,9,4] # referencing
 print(id(list1))
 list2 =list1
 print(id(list2))
 list2.append(12)
 print(list1)
 print(list2)
+print("___________________")
+list3 = list2.copy()
+print(id(list3))
+print(id(list2))
 
-#HW-explore list class and test all the methods
+# count(self, value, /)
+#Return number of occurrences of value.
+print("--------------count--------------")
+list1 =[2,4,7,9,0,1,2,4,7,9,2,4,7,8,9,0,3,6,8]
+value = list1.count(0)
+print(value)
+value = list1.count(12)
+print(value)
+
+
+#extend(self, iterable, /)
+# Extend list by appending elements from the iterable.
+print("-------------extend--------------")
+list1 = [1,2,4,6,8,1,2]
+list2= [3,4,5,1,2,0]
+list1.extend(list2)
+print(list1)
+tup1=(1,2,3,4,5,6,7)
+list2.extend(tup1)
+print(list2)
+set1 ={1,2,5,6,8,9,2,12}
+list1.extend(set1)
+print(list1)
+arr1 = ('i',[1,4,6,8,9,2,3])
+list1.extend(arr1)
+print(list1)
+
+# index(self, value, start=0, stop=9223372036854775807, /)
+# Return first index of value.
+#      Raises ValueError if the value is not present.
+print("----------- indexing ---------------------")
+list1 =[1,3,3,4,2,5,6,7,4,1,3,5,6,2,4,6,4,3,2,5,5]
+value = list1.index(2) #check all the list
+print(value)
+value = list1.index(5,0,6) #checks value 5 from 0 index to 5
+print(value)
+
+import sys
+data = 1
+start =2
+end =4
+try:
+    value= list1.index(data,start,end)
+    print(value)
+except:
+    print("Error: ", sys.exc_info()[1])
+
+# insert(self, index, object, /)
+    # Insert object before index.
+print("-----------------insert----------------")
+list1 = [1,2,4,5,7,9,4,3,1,2,6,7,8,4,3]
+list1.insert(4,12)
+print(list1)
+list2 =[0,1,2,3] # we can add either add a value or whole collection
+list1.insert(0,list2[1]) #indexing the list 2 value to insert
+print(list1)
+tup1 =(1,2,3,4,5)
+list2.insert(6,tup1[2]) #indexing the tuple in index 6 but it inserts at last
+print(list2)
+set1 ={9,8,7,6,5,4}
+list2.insert(-7,set1) # if negative index is not fount store at front #indexing doesnot work here
+print(list2)
+
+# pop(self, index=-1, /)
+#   Remove and return item at index (default last)
+#     Raises IndexError if list is empty or index is out of range.
+print("-----------------pop--------------------")
+list1 = [1,2,3,4,5,6,7,8,9]
+value = list1.pop() #if no indexing then pop or remove from last
+print(value)
+print(list1)
+value1 = list1.pop(-4) #works on both positive indexing and negative indexing
+print(value1)
+print(list1)
+import sys
+try:
+    value2 = list1.pop(10)
+    print(value2)
+    print(list1)
+except:
+    print("ERROR : ",sys.exc_info()[1])
+list2 =[]
+try:
+    value2 = list2.pop(1)
+    print(value2)
+    print(list2)
+except:
+    print("ERROR : ",sys.exc_info()[1])
+
+#remove(self, value, /)
+# Remove first occurrence of value.
+# Raises ValueError if the value is not present
+print("-------------------remove----------------")
+list1 =[1,2,3,4,6,4,2,]
+list1.remove(2)
+print(list1)
+
+try:
+    list1.remove()
+    print(list1)
+except:
+    print("ERROR:-",sys.exc_info()[1])
+
+try:
+    list1.remove(12)
+    print(list1)
+except:
+    print("ERROR:-",sys.exc_info()[1])
+
+#reverse(self, /)
+# Reverse *IN PLACE*.
+print("-----------------reverse-------------------")
+list1 = [1,2,3,4,5,6,7,8]
+print(list1)
+list1.reverse()
+print(list1)
+
+#sort(self, /, *, key=None, reverse=False)
+print("----------------sort---------------------")
+list1 =[5,8,5,3,2,7,9,5,1,2,4,6,8,9,0,7,6,4,3,8,9,7,5,4,3,2,9,0,8]
+list1.sort()
+print(list1)
+list1.sort(reverse=True) #key -->
+print(list1)
 
