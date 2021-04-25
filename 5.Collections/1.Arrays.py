@@ -187,3 +187,86 @@ myArray = array('i', [4, 2, 6, 7, 9])
 print(myArray)
 myArray[1] = 9
 print(myArray)
+
+
+#insert
+print("-----------insert------------")
+myArray = array('i', [4, 2, 6, 7, 9])
+myArray.insert(2,5)
+print(myArray)
+print(len(myArray))
+myArray.insert(7,7)
+print(myArray)
+print(len(myArray))
+
+# pop(self, i=-1,/)
+#return the ith element and delete it from array
+print("---------------------pop-------------")
+myArray = array('i', [4, 2, 6, 7, 9])
+print(myArray)
+result = myArray.pop(3)
+print(result)
+print(myArray)
+
+# myArray.pop(5) #index # index:Error : pop index out of range
+idx =4
+if (len(myArray)>idx):
+    myArray.pop(idx)
+else:
+    print("index is not availbale")
+
+#remove(self,v,/)
+#remove the first occurance of v in the array
+print("---------------------remove-------------")
+myArray = array('i', [4, 2, 6, 2, 9])
+print(myArray)
+myArray.remove(2) # remove value 2 from array
+print(myArray)
+myArray.remove(2) # remove value 2 for second time
+print(myArray)
+
+
+myArray = array('i', [4, 3, 6, 3, 9])
+value =3
+result = myArray.count(value) #2
+print(result)
+for i in range(result): #less than result
+    myArray.remove(value)
+print(myArray)
+
+#reverse(self,/)
+#reverse the order of item in the array.
+print("-----------Reverse-----------------")
+myArray = array('i',[2,3,5,6,7,8,2,3,4,5])
+print(myArray)
+myArray.reverse()
+print(myArray)
+
+"""#tobytes(self, /)
+#convert the arrant to an array of machine value
+print("------------to bytes-------------")
+myArray = array('i',[1,2,3,4,5,6])
+result= myArray.tobytes()
+print(result)
+"""
+
+
+#tolist(self, /)
+print("------------------tolist--------------")
+myArray = array('i',[1,2,5,7,9,0])
+mylist = myArray.tolist()
+print(myArray)
+print(type(myArray))
+print(mylist)
+print(type(mylist))
+
+#tostring(self,/)
+print("-----------tostring-------------")
+yArray = array('i',[1,2,5,7,9,0])
+myStr = myArray.tostring()
+print(myArray)
+print(myStr)
+
+
+
+
