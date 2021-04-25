@@ -1,5 +1,9 @@
 from array import array
-list1 =list() # object initialize ->call __init__()
+#declare
+list1 = []
+print(type(list1))
+list1 =list()
+print(type(list1))# object initialize ->call __init__()
 # iterable ->array,list,set,tuple
 
 myArray = array('i',[1,3,5,7,8,9])
@@ -27,4 +31,6 @@ print(id(list2))
 list2.append(12)
 print(list1)
 print(list2)
+
+#HW-explore list class and test all the methods
 
