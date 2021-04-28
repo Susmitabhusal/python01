@@ -2,6 +2,9 @@ from array import array
 #declare
 list1 = []
 print(type(list1))
+list1=[3,4,6,7,8]
+list1=([1,3,5,7,8])
+list1=([1,2,3,3+5,True,"Kathmandu"])
 list1 =list()
 print(type(list1))# object initialize ->call __init__()
 # iterable ->array,list,set,tuple
@@ -74,11 +77,12 @@ print(list1)
 # Return first index of value.
 #      Raises ValueError if the value is not present.
 print("----------- indexing ---------------------")
-list1 =[1,3,3,4,2,5,6,7,4,1,3,5,6,2,4,6,4,3,2,5,5]
+list1 =[1,3,3,4,2,5,6,7,4,1,3,5,6,2,4,6,4,3,2,5,4]
 value = list1.index(2) #check all the list
 print(value)
 value = list1.index(5,0,6) #checks value 5 from 0 index to 5
 print(value)
+print(list1[len(list1)-1]) #first check the len then len -1 i.e. last term
 
 import sys
 data = 1
@@ -168,3 +172,73 @@ print(list1)
 list1.sort(reverse=True) #key -->
 print(list1)
 
+
+#Extra from w3 schools
+#place holder for string
+print("---------place holder for string-------")
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+
+fruits = {"apple", "banana", "cherry"}
+more_fruits = ["orange", "mango", "grapes"]
+fruits.update(more_fruits)
+print(fruits)
+
+
+#sum of list
+squares = [1, 4, 9, 16]
+sum = 0
+for num in squares:
+    sum += num
+print(sum)
+
+# Updating Value
+print("------------------ update ------------------")
+list1 = [3, 5, 6, 7, 2, 1]
+print(list1)
+list1[4]=9 #update is done by indexing the value
+print(list1)
+
+# Slicing - Return list of given range
+print("------------------ Slicing ------------------")
+list1 = [3, 5, 6, 7, 2, 1]
+print(list1[:])
+print(list1[0:])
+print(list1[:9])
+print(list1[::2])
+print(list1[::-1])
+
+#in or not in
+print("----------------in or not in ----------------------")
+list1 =["Susmita","Bhusal","Ramchandra","Gaihre"]
+value = "Susmita" in list1
+print(value)
+value = "Swekshya" not in list1
+print(value)
+
+#concat --> USED to add the list (using + sign)
+list1 =["APPLE","BALL","CAT","DOG"]
+list2=["ELEPHANT","FISH","GUN","HEN"]
+list3 = list2 +list1
+print(list3)
+list3 = list1 +list2
+print(list3)
+
+#method
+#zip() #combine two list and merge it to one and combine the element
+print("---------------------------Zip()-----------------------")
+my_list1 = [1,2,3,4,5]
+my_list2 = ['Krishna','Reeta','Rhydam','Rajan','Uttam'] # it print data upto which both have commomn len
+my_list3 = list(zip(my_list1, my_list2))
+print(my_list3)
+
+print(type(my_list3))
+print(len(my_list3))
+print(hex(id(my_list3)))
+
+for item in my_list3:
+    print(item)
+
+id, names = zip(*my_list3) #why we used * ?
+print(id, names)
