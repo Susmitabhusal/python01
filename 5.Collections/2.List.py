@@ -34,14 +34,15 @@ print(list2)
 
 #copy
 print("--------------copy----------------------")
-list1 =[3,4,7,9,4] # referencing
+list1 =[3,4,7,9,4] # referencing --> euta maa clear garda aarko maa ne huncha
 print(id(list1))
 list2 =list1
 print(id(list2))
 list2.append(12)
 print(list1)
 print(list2)
-print("___________________")
+print("__________Copy function_________")
+
 list3 = list2.copy()
 print(id(list3))
 print(id(list2))
