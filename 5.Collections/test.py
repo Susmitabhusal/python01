@@ -1,5 +1,5 @@
 #from array import array
 #help(array)
-help(list)
+#help(list)
 
-
+help(str)
