@@ -152,7 +152,7 @@ print(range(10))
 var1 = range(10)
 print(var1)
 
-#5.Collections with for loop
+#Unit4.Collections with for loop
 list1 =[3,4,5,6,7]
 for item in list1:
     print(item)
