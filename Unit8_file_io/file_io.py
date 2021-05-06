@@ -3,6 +3,12 @@ import sys
 # Open and write on file(Clear all and write)
 # Open and append on file (Append at last)
 # Open and read from file
+#String processing - String class and methods
+
+
+#data Engineering (Data Science)
+#Natural Language processing (NLP)
+#Machine leaening - Decision Making
 
 # we are working on same file so no need to give path
 # PATH = 'C:\\Users\\ramga\\PycharmProjects\\pythonProject\\corepython1\\Unit8_file_io'
